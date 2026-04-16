@@ -1,0 +1,22 @@
+{
+    "appId": "com.insane.first",
+    "extraResources": ["dist-electron/preload.cjs"],
+    "icon": "./icon.png",
+    "files": [
+        "dist-react",
+        "dist-electron"
+    ],
+    "mac": {
+        "target": "dmg"
+    },
+    "linux": {
+        "target": "AppImage",
+        "category": "Utility"
+    },
+    "win": {
+        "target": [
+            "portable",
+            "msi"
+        ]
+    }
+}
